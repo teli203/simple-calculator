@@ -32,4 +32,22 @@
     border-radius: 20%;
     box-shadow: -5px -5px 10px rgba(3, 3, 3, 0.393), 5px 5px 10px rgba(0, 0, 0, 0.312);
     color: rgba(4, 4, 4, 0.788);
+    cursor: pointer;
 }
+
+form .box-display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+form .box-display input {
+    text-align: right;
+    flex: 1;
+    font-size: 50px;
+    box-shadow: none;
+}
+
+
+/* !Break! */
+/* What needs to be done next: Add class names to html for target style on equal sign to be wider for pg alignment, and style class box display, add onclicks for btns to populate  */
