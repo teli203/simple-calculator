@@ -28,7 +28,8 @@
     outline: 0;
     width: 60px;
     height: 70px;
-    border-radius: 100%;
+    margin: 8px;
+    border-radius: 20%;
     box-shadow: -5px -5px 10px rgba(3, 3, 3, 0.393), 5px 5px 10px rgba(0, 0, 0, 0.312);
     color: rgba(4, 4, 4, 0.788);
 }
