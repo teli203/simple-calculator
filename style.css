@@ -13,3 +13,10 @@
     align-items: center;
     justify-content: center;
 }
+
+.calculator {
+    background: rgb(66, 65, 65);
+    padding: 1.3rem;
+    border-radius: 8px;
+
+}
