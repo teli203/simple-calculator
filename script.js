@@ -18,4 +18,12 @@ for (let i = 0; i < bubbleCount; i++) {
   bubble.style.animationDuration = `${duration}s`;
   bubble.style.animationDelay = `${delay}s`;
   bubble.style.fontSize = `${size / 2.5}px`;
+
+  // Click to POP!!!! //
+  
+  bubble.addEventListener("click", () => {
+    bubble.remove();
+      });
+    
+    document.body.appendChild(bubble);
 }
