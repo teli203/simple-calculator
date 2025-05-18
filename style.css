@@ -89,8 +89,9 @@ form input.operators {
         transform: translateY(0);   
     }
     50% {   
+        opacity: 0.1;
       }
-      100% {
+    100% {
         transform: translateY(-120vh);   
       }
 }
