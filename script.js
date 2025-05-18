@@ -1,4 +1,4 @@
-const bubbleCount = 40;
+const bubbleCount = 50;
 
 for (let i = 0; i < bubbleCount; i++) {
   const bubble = document.createElement("div");
