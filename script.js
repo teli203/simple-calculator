@@ -27,3 +27,12 @@ for (let i = 0; i < bubbleCount; i++) {
     
     document.body.appendChild(bubble);
 }
+// Dark Mode //
+
+  const toggleBtn = document.getElementById('toggleMode');
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    document.documentElement.classList.toggle('dark'); 
+    toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+  });
