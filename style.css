@@ -146,6 +146,19 @@ p {
     margin-bottom: 2rem;
 }
 
+#timer {
+    font-weight: bold;
+    color: #474646;
+  }
+  
+  body.dark #timer {
+    color: #faecfa;
+  }
+  
+  #restartTimer:hover {
+    background-color: #a151b2;
+  }
+
 /* Media Query */
 
 @media (max-width: 375px) {
