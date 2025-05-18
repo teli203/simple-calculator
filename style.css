@@ -22,7 +22,7 @@
 }
 
 .calculator form input {
-    background: transparent;
+    background: #ffffffd5;
     font-size: 20px;
     border: 0;
     outline: 0;
@@ -48,6 +48,6 @@ form .box-display input {
     box-shadow: none;
 }
 
-
-/* !Break! */
-/* What needs to be done next: Add class names to html for target style on equal sign to be wider for pg alignment, and style class box display, add onclicks for btns to populate  */
+form input.equal {
+    width: 137px;
+}
