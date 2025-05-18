@@ -1,4 +1,23 @@
-const bubbleCount = 50;
+ const bubbleCount = 50;
+ let bubblesPopped = 0;
+ let timerStarted = false;
+ let timeLeft = 180;
+ let timerInterval;
+
+const timerDisplay = document.createElement('div');
+ timerDisplay.id = 'timer';
+ timerDisplay.style.marginTop = '40px';
+ timerDisplay.style.fontSize = '18px';
+ timerDisplay.style.textAlign = 'center';
+ timerDisplay.textContent = '03:00';
+
+ const restartButton = document.createElement('button');
+ restartButton.id = 'restartTimer';
+ restartButton.textContent = '🔄 Restart Timer';
+
+
+
+
 
 for (let i = 0; i < bubbleCount; i++) {
   const bubble = document.createElement("div");
@@ -36,3 +55,4 @@ for (let i = 0; i < bubbleCount; i++) {
     document.documentElement.classList.toggle('dark'); 
     toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
   });
+
