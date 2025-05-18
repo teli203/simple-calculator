@@ -35,6 +35,11 @@
     cursor: pointer;
 }
 
+.calculator form input:hover {
+    color: rgb(209, 111, 160);
+    font-size: 30px;
+}
+
 form .box-display {
     display: flex;
     justify-content: flex-end;
