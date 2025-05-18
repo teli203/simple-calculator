@@ -1,7 +1,7 @@
- const bubbleCount = 50;
+ const bubbleCount = 100;
  let bubblesPopped = 0;
  let timerStarted = false;
- let timeLeft = 180;
+ let timeLeft = 60;
  let timerInterval;
 
 const timerDisplay = document.createElement('div');
@@ -9,12 +9,21 @@ const timerDisplay = document.createElement('div');
  timerDisplay.style.marginTop = '40px';
  timerDisplay.style.fontSize = '18px';
  timerDisplay.style.textAlign = 'center';
- timerDisplay.textContent = '03:00';
+ timerDisplay.textContent = '1:00';
 
  const restartButton = document.createElement('button');
  restartButton.id = 'restartTimer';
- restartButton.textContent = '🔄 Restart Timer';
+ restartButton.textContent = 'Restart';
 
+ const toggleDiv = document.querySelector('.toggle');
+ toggleDiv.appendChild(timerDisplay);
+ toggleDiv.appendChild(restartButton);
+
+ function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+ }
 
 
 
