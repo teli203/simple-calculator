@@ -64,6 +64,10 @@ form input.operators {
     color: rgb(202, 2, 145);
 }
 
+.bubble {
+    position: absolute;
+}
+
 
 /* Media Query */
 
