@@ -67,6 +67,9 @@ form input.operators {
 .bubble {
     position: absolute;
     font-weight: bold;
+    bottom: -100px;
+    width: 60vw;
+    height: 60vh;
 }
 
 
