@@ -51,3 +51,7 @@ form .box-display input {
 form input.equal {
     width: 137px;
 }
+
+form input.operators {
+    color: rgb(202, 2, 145);
+}
