@@ -45,6 +45,9 @@ form .box-display input {
     text-align: right;
     flex: 1;
     font-size: 50px;
+    padding-right: 4.5px;
+    border: .8px solid rgb(0, 0, 51);
+    border-radius: 6px;
     box-shadow: none;
 }
 
