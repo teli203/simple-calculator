@@ -48,7 +48,7 @@ body.dark {
   
 .calculator {
     background: #6e819c;
-    max-height: 95vh;
+    max-height: 100vh;
     padding: 1.3rem;
     border-radius: 25px;
     box-shadow: 20px 15px 5px black;
