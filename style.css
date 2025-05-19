@@ -49,6 +49,7 @@ body.dark {
 
 .calculator {
     background: #6e819c;
+    max-height: 95vh;
     padding: 1.3rem;
     border-radius: 25px;
     box-shadow: 20px 15px 5px black;
@@ -143,7 +144,7 @@ p {
     display: flex;
     position: absolute;
     bottom: -100px;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 #timer {
@@ -173,3 +174,33 @@ p {
         font-size: 10px;
     }
 }
+
+@media (max-width: 500px) {
+    .toggle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-right: 10rem;
+    }
+
+    .calculator {
+      margin-top: 10rem;
+      margin-bottom: 1rem;
+    }
+  
+    #timer {
+      font-size: 16px;
+    }
+  
+    #restartTimer {
+      padding: 6px 8px;
+      font-size: 18px;
+    }
+
+    p {
+        margin-left: 1rem;
+    }
+  }
+  
