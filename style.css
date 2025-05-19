@@ -154,10 +154,6 @@ p {
   body.dark #timer {
     color: #faecfa;
   }
-  
-  #restartTimer:hover {
-    background-color: #a151b2;
-  }
 
 /* Media Query */
 
