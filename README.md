@@ -24,8 +24,8 @@ The FUN Number Bubble Calculator was designed for a group of students who didnâ€
 ### Light Mode with Bubbles
 <img width="500" alt="Image" src="https://github.com/user-attachments/assets/c7548e35-5a9c-4800-8aff-426afa289f64"  />
 
-### 3
-<img width="500" alt="Image" src="" />
+### Dark Mode with Bubbles
+<img width="500" alt="Image" src="https://github.com/user-attachments/assets/2d4caf69-fd25-47b0-8e18-dfc6ab5bca81" />
 
 ## ðŸŽ¯ Usage
 
