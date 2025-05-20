@@ -18,11 +18,11 @@ The FUN Number Bubble Calculator was designed for a group of students who didnâ€
    
 ## ðŸ“¸ Screenshots
 
-### Light Mode (No Bubbles)
+### Light Mode No Bubbles
 <img width="500"  alt="Image" src="https://github.com/user-attachments/assets/512ddfb1-69f4-424a-b8a9-905d140b69b3" />
 
-### 2
-<img width="500" alt="Image" src="" />
+### Light Mode with Bubbles
+<img width="500" alt="Image" src="https://github.com/user-attachments/assets/c7548e35-5a9c-4800-8aff-426afa289f64"  />
 
 ### 3
 <img width="500" alt="Image" src="" />
