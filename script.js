@@ -1,3 +1,5 @@
+let stopBubbles = false;
+
 const bubbleCount = 100;
 let bubblesPopped = 0;
 let timerStarted = false;
@@ -10,6 +12,8 @@ timerDisplay.style.marginTop = '40px';
 timerDisplay.style.fontSize = '18px';
 timerDisplay.style.textAlign = 'center';
 timerDisplay.textContent = "1:00";
+
+// 🔄 Refresh Btn ONLY for Timer //
 
 const restartButton = document.createElement('button');
 restartButton.id = 'restartTimer';
@@ -26,7 +30,37 @@ restartButton.style.boxShadow = '3px 5px 6px rgb(58, 25, 149)';
 restartButton.style.display = 'block';
 restartButton.style.marginInline = 'auto';
 
-const toggleDiv = document.querySelector('.toggle');
+// 🚫 Stop Bubbles //
+
+const toggleDiv = document.querySelector('.toggle'); 
+
+const stopButton = document.createElement('button');
+stopButton.id = 'stopBubbles';
+stopButton.innerHTML = '🚫';
+stopButton.style.fontSize = '20px';
+stopButton.style.marginTop = '10px';
+stopButton.style.padding = '6px 10px';
+stopButton.style.border = '2.5px solid rgb(219, 158, 237)';
+stopButton.style.borderRadius = '8px';
+stopButton.style.cursor = 'pointer';
+stopButton.style.backgroundColor = 'rgb(214, 213, 247)';
+stopButton.style.color = '#fff';
+stopButton.style.boxShadow = '3px 5px 6px rgba(0,0,0,0.3)';
+stopButton.style.display = 'block';
+stopButton.style.marginInline = 'auto';
+
+toggleDiv.appendChild(stopButton); 
+
+
+stopButton.addEventListener('click', () => {
+  stopBubbles = true;
+
+  // Remove all existing bubbles//
+
+  const existingBubbles = document.querySelectorAll('.bubble');
+  existingBubbles.forEach(bubble => bubble.remove());
+});
+
 toggleDiv.appendChild(timerDisplay);
 toggleDiv.appendChild(restartButton);
 
@@ -58,6 +92,8 @@ restartButton.addEventListener('click', () => {
 // Create Bubbles //
 
 for (let i = 0; i < bubbleCount; i++) {
+  if (stopBubbles) break; // Exit early if stop button was pressed
+
   const bubble = document.createElement("div");
   bubble.classList.add("bubble");
 
@@ -76,20 +112,21 @@ for (let i = 0; i < bubbleCount; i++) {
   bubble.style.animationDelay = `${delay}s`;
   bubble.style.fontSize = `${size / 2.5}px`;
 
-  // Click to POP and Trigger the Timer //
-
   bubble.addEventListener("click", () => {
-    bubble.remove();
-    bubblesPopped++;
+    if (!stopBubbles) {
+      bubble.remove();
+      bubblesPopped++;
 
-    if (!timerStarted) {
-      startTimer();
-      timerStarted = true;
+      if (!timerStarted) {
+        startTimer();
+        timerStarted = true;
+      }
     }
   });
 
   document.body.appendChild(bubble);
 }
+
 
 // Dark Mode //
 
