@@ -157,23 +157,6 @@ p {
 
 /* Media Query */
 
-@media (max-width: 375px) {
-    .container {
-        width: 90%;
-        height: 90vh;
-    }
-
-    .calculator form input {
-        font-size: 15px;
-        width: 40px;
-        height: 50px;
-    }
-
-    p {
-        font-size: 10px;
-    }
-}
-
 @media (max-width: 500px) {
     .toggle {
       display: flex;
@@ -202,6 +185,18 @@ p {
         margin-left: 1rem;
     }
   }
+
+  @media (max-width: 375px) {
+    .calculator form input {
+        font-size: 15px;
+        width: 40px;
+        height: 50px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
   
 
   /* To Do */
