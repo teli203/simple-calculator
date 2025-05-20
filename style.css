@@ -162,7 +162,7 @@ p {
 
 /* Media Query */
 
-@media (min-width: 820px){
+@media (min-width: 1020px) {
     .calculator form input {
         height: 70px
     }
