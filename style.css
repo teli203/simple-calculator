@@ -12,13 +12,18 @@
     align-items: center;
     justify-content: center;
 }
-  
+
 .toggle {
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: absolute;
     top: 10px;
     right: 10px;
     z-index: 1000;
-}
+  }
   
 /* Light/Dark Button styling */
 
@@ -60,7 +65,7 @@ body.dark {
     border: 0;
     outline: 0;
     width: 60px;
-    height: 70px;
+    max-height: 70px;
     margin: 8px;
     border-radius: 20%;
     box-shadow: -5px -5px 10px rgba(3, 3, 3, 0.393), 5px 5px 10px rgba(0, 0, 0, 0.312);
@@ -70,7 +75,6 @@ body.dark {
 
 .calculator form input:hover {
     color: rgb(209, 111, 160);
-    font-size: 30px;
 }
 
 form .box-display {
@@ -149,6 +153,7 @@ p {
 #timer {
     font-weight: bold;
     color: #474646;
+    margin-bottom: 20px;
   }
   
   body.dark #timer {
@@ -157,23 +162,21 @@ p {
 
 /* Media Query */
 
-@media (max-width: 500px) {
+@media (min-width: 820px){
+    .calculator form input {
+        height: 70px
+    }
+}
+
+@media (max-width: 600px) {
     .toggle {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-right: 10rem;
     }
 
     .calculator {
       margin-top: 10rem;
       margin-bottom: 1rem;
-    }
-  
-    #timer {
-      font-size: 16px;
     }
   
     #restartTimer {
@@ -186,14 +189,22 @@ p {
     }
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
+    .calculator {
+        margin: 1rem;
+    }
+
     .calculator form input {
         font-size: 15px;
-        width: 40px;
-        height: 50px;
+        width: 30px; 
+    }
+
+    form input.equal {
+        width: 80px;
     }
 
     p {
+        display: flex;
         font-size: 10px;
     }
 }
